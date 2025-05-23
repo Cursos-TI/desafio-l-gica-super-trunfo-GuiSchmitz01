@@ -100,9 +100,9 @@ int main() {
         printf("%s (%s): %.4f habitantes/km²\n", nomeCidade2,codigo2,densidadePopulacional2);
 
         // Menor densidade vence neste caso
-        if(densidadePopulacional_01 < densidadePopulacional_02){
+        if(densidadePopulacional1 < densidadePopulacional2){
             printf("\nResultado: Carta 01 venceu!\n");
-        }else if(densidadePopulacional_02 < densidadePopulacional_01){
+        }else if(densidadePopulacional2 < densidadePopulacional1){
             printf("\nResultado: Carta 02 venceu!\n");
         }else{
             printf("\nEmpate!\n");
@@ -110,12 +110,12 @@ int main() {
     }
     else if (strcmp(atributo,"pib_per_capita")==0) {
         printf("\n--- Comparando PIB per Capita ---\n");
-        printf("%s (%s): %.4f\n",nomeCidade_01,codigo_01,pibPerCapita_01);
-        printf("%s (%s): %.4f\n",nomeCidade_02,codigo_02,pibPerCapita_02);
+        printf("%s (%s): %.4f\n",nomeCidade1,codigo1,pibPerCapita1);
+        printf("%s (%s): %.4f\n",nomeCidade2,codigo2,pibPerCapita2);
 
-        if(pibPerCapita_01>pibPerCapita_02)
+        if(pibPerCapita1>pibPerCapita2)
             printf("\nResultado: Carta 01 venceu!\n");
-        else if(pibPerCapita_02>pibPerCapita_01)
+        else if(pibPerCapita2>pibPerCapita1)
             printf("\nResultado: Carta 02 venceu!\n");
         else
             printf("\nEmpate!\n");  
